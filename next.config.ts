@@ -4,14 +4,13 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com'
-      }
-    ]
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
+    ],
   },
-  experimental: {
-    cacheComponents: true,
-  },
+
+  cacheComponents: true,
 };
 
 export default nextConfig;
