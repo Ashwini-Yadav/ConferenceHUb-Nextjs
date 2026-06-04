@@ -5,7 +5,7 @@ import { IEvent } from "@/database";
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 const page = async() => {
-const response = await fetch(`${BASE_URL}/api/events`);
+const response = await fetch(`${BASE_URL}/api/events`,{ next: {revalidate: 3600}});
 const { events } = await response.json();
 
   return (
