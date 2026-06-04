@@ -11,8 +11,10 @@
   "dependencies": {
     "@base-ui/react": "^1.5.0",
     "class-variance-authority": "^0.7.1",
+    "cloudinary": "^2.10.0",
     "clsx": "^2.1.1",
     "lucide-react": "^1.16.0",
+    "mongoose": "^9.6.3",
     "next": "16.3.0-canary.27",
     "ogl": "^1.0.11",
     "posthog-js": "^1.376.2",
