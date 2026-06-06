@@ -35,7 +35,14 @@ export default function RootLayout({
       <body
         className={`${SchibstedGrotesk.variable} ${MartianMono.variable} min-h-screen antialiased`}>
 
-        {/* <div className="absolute inset-0 top-0 a-[-1] min-h-screen ">
+        <Navbar/>
+        <main>
+          <PostHogProvider>
+            {children}
+          </PostHogProvider>
+        </main>   
+
+        <div className="absolute inset-0 top-0 -z-10 min-h-screen pointer-events-none">
           <LightRays
             raysOrigin="top-center-offset"
             raysColor="#5dfeca"
@@ -48,13 +55,7 @@ export default function RootLayout({
             distortion={0.01}
             className="custom-rays"
           />
-        </div> */}
-        <Navbar/>
-        <main>
-          <PostHogProvider>
-            {children}
-          </PostHogProvider>
-        </main>
+        </div>
       </body>
     </html>
   );

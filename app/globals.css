@@ -251,6 +251,10 @@
     @apply bg-dark-100 text-light-100 text-xs rounded-[6px] px-5 py-2;
   }
 
+  .custom-rays {
+  pointer-events: none !important;
+   }
+
   #book-event {
     @apply flex flex-col gap-6;
 
